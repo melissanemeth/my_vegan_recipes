@@ -1,9 +1,20 @@
-$navbar-default-bg: #312312;
-$light-orange: #ff8c00;
+$navbar-default-bg: #009999;
+$light-orange: #FF9933;
 $navbar-default-color: $light-orange;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar {
+  background: #9ee8fa; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #9ee8fa 0%, #d6f9ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9ee8fa), color-stop(100%,#d6f9ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #9ee8fa 0%,#d6f9ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee8fa', endColorstr='#d6f9ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
 #logo {
   margin-top: 10px;
@@ -16,11 +27,6 @@ $navbar-default-color: $light-orange;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover {
-  color: white;
-  text-decoration: none;
 }
 
 body {
@@ -37,6 +43,11 @@ body {
   padding-left: 25px;
   float: left;
   margin-top: 20px;
+  list-style-type: none;
+}
+
+.dropdown {
+  list-style-type: none;
 }
 
 .center {
@@ -118,3 +129,25 @@ span.picture {
 .show_recipe {
   margin: 10px;
 }
+
+.btn-warning {
+  background-color: #FFAD60;
+  color: black;
+}
+
+.btn-warning:hover {
+  background-color: #e59b56;
+}
+
+.btn-success {
+  background-color: #398564;
+}
+
+.btn-success:hover {
+  background-color: #275d46;
+}
+
+h1 {
+  font-family: Candara;
+}
+
