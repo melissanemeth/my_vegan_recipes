@@ -1,0 +1,14 @@
+<%= render 'shared/page_title', title: "Edit Your Commnet" %>
+
+<%= render 'shared/errors', obj: @comment %>
+
+<div class="row">
+  <div class="well col-md-8 col-md-offset-2">
+    <%= form_for ([@recipe, @comment]) do |f| %>
+      <%= f.label 'Edit Comment' %>
+      <%= f.text_area :body %>
+
+      <%= f.submit(@comment.new_record? ? 'Submit' : 'Update Comment', class: "btn btn-success") %>
+    <% end %>
+  </div>
+</div>
