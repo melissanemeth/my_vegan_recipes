@@ -16,7 +16,8 @@ class CommentsController < ApplicationController
       flash[:success] = "Your comment has been added"
       redirect_to recipe_path(@recipe)
     else
-      render template: 'recipes/show'
+      flash[:danger] = "Your comment could not be added"
+      redirect_to :back
     end
   end
 
