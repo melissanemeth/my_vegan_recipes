@@ -1,36 +1,3 @@
-Testing specs for recipes:
-name: string
-summary: text
-description: text
+This app was created in conjunction with the Udemy Professional Ruby on Rails Developer course.
+https://www.udemy.com/pro-rubyonrails/
 
-- name must be present
-- name must be at least 5 and less than 100 characters
-- summary must be present
-- summary must be at least 10 and less than 150 characters
-- description must be present
-- description must be at least 20 and less than 1500 characters
-- chef_id must be present
-
-Testing specs for chefs:
-chefname: string
-email: string
-
-- chefname must be present
-- chefname must be between 3 and 40 characters
-- email must be present
-- email must be unique (will be used for logins)
-- email must be valid
-
-Adding ability to create reviews:
-
-- Migration to create reviews table. Body, type = text_field, 2 foreign keys, reference chef_id, reference recipe_id
-- Build Review model
-- Create tests for spec and add validations to review model
-- Build associations, has_many and belongs_to (between recipes and reviews, and chefs and reviews)
-- Test associations in Rails console (recipe.reviews, chef.reviews)
-- Modify recipe show page to include a place where logged in users can write reviews
-- Add routes to route file (new, create, show, etc)
-- Make sure only authenticated users can write reviews (before_action require_user)
-- Associate a chef_id and recipe_id
-- Use existing code when possible (text area from new recipe page, recipes index page for displaying reviews, pagination)
-- Use a git branch, then drop branch and don't merge back to master if it doesn't work right
