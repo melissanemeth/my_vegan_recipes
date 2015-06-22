@@ -22,9 +22,3 @@ module Workspace
   end
 end
 
-config.after_initialize do  
- Disqus::defaults[:account] = "mnemeth1"  
- Disqus::defaults[:developer] = true  
- Disqus::defaults[:container_id] = "disqus_thread"  
- Disqus::defaults[:show_powered_by] = false  
-end 
