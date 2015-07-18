@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     member do
       post 'like'
     end
-    resources :comments, only: [:create, :edit, :update, :destroy]
+    resources :comments, only: [:new, :show, :create, :edit, :update, :destroy]
   end
   
   resources :chefs, except: [:new, :destroy]

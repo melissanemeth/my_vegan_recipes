@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   before_action :require_user
-  before_action :require_same_user, only: [:update, :edit, :destroy]
+  before_action :require_same_user, only: [:edit, :destroy]
   
   def new
     @comment = Comment.new
