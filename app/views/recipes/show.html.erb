@@ -21,7 +21,10 @@
         <p>Styles: <%= render @recipe.styles %> </p>
       <% end %>
       <% if @recipe.ingredients.any? %>
-        <p>Ingredients: <%= render @recipe.ingredients %> </p>
+        Ingredients: <% @recipe.ingredients.each do |ing, i| %> 
+        <%= link_to ing.name, ing %> 
+        <% end %>
+        <%= @ingredients.map{|i| i.name}.join(",") %>
       <% end %>
       <p>
         <strong>Instructions:</strong>

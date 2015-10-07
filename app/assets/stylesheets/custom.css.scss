@@ -1,19 +1,12 @@
-$navbar-default-bg: #009999;
+/* $navbar-default-bg: #009999;
 $light-orange: #FF9933;
-$navbar-default-color: $light-orange;
+$navbar-default-color: $light-orange; */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 .navbar {
-  background: #9ee8fa; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #9ee8fa 0%, #d6f9ff 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#9ee8fa), color-stop(100%,#d6f9ff)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg,  #9ee8fa 0%,#d6f9ff 100%); /* IE10+ */
-  background: linear-gradient(135deg,  #9ee8fa 0%,#d6f9ff 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee8fa', endColorstr='#d6f9ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #602320;
 }
 
 #logo {
@@ -22,15 +15,33 @@ $navbar-default-color: $light-orange;
   float: left;
   margin-right: 10px;
   font-size: 2em;
-  color: #fff;
-  text-transform: uppercase;
+  color: #191919;
+  background-color:  #eb8c00;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  border: none;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#logo:hover {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  font-size: 2em;
+  color: #fff;
+  background-color:  #eb8c00;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  border: none;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 body {
   padding-top: 80px;
+  background-color: #E6E6B8;
 }
 
 .nav_item {
@@ -63,6 +74,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 h2 {
@@ -130,24 +142,34 @@ span.picture {
   margin: 10px;
 }
 
-.btn-warning {
-  background-color: #FFAD60;
+ .btn-warning {
+  background-color: #dc6900;
   color: black;
+  border: none;
 }
 
 .btn-warning:hover {
-  background-color: #e59b56;
+  background-color: #dc6900;
+  border: none;
 }
 
 .btn-success {
-  background-color: #398564;
+  background-color: #006B00;
+  border: none;
 }
 
 .btn-success:hover {
-  background-color: #275d46;
+  background-color: #006B00;
+  border: none;
+  color: black;
 }
 
-h1 {
-  font-family: Candara;
+.jumbotron {
+  background-image: image-url("Broccoli-crop.jpg");
+  background-size: 100%;
+  overflow: hidden;
 }
 
+.welcome {
+  color: #FFFFF5 !important;
+}
