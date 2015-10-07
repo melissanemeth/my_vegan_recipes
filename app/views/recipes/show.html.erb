@@ -18,13 +18,10 @@
     </div>
     <div class="well">
       <% if @recipe.styles.any? %>
-        <p>Styles: <%= render @recipe.styles %> </p>
+        <p>Styles: <br/> <%= render @recipe.styles %> </p>
       <% end %>
       <% if @recipe.ingredients.any? %>
-        Ingredients: <% @recipe.ingredients.each do |ing, i| %> 
-        <%= link_to ing.name, ing %> 
-        <% end %>
-        <%= @ingredients.map{|i| i.name}.join(",") %>
+        <p>Ingredients: <br/> <%= render @recipe.ingredients %></p>
       <% end %>
       <p>
         <strong>Instructions:</strong>
